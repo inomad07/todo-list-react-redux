@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
-import styled from 'styled-components';
+import React, { useState } from 'react'
+import styled from 'styled-components'
 
-import { formProps as Props } from '../../types';
+import { formProps as Props } from '../../types'
 
 const Input = styled.input`
     font-size: 100%;
@@ -9,9 +9,11 @@ const Input = styled.input`
     border-width: 0;
 `;
 
+const placeholder = 'Type a todo, then hit enter!'
+
 const Form = (props: Props) => {
     const [ name, setName ] = useState('');
-    const { placeholder, onAddTodo } = props;
+    const { onAddTodo } = props;
 
     const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
         setName(e.target.value);

@@ -50,11 +50,8 @@ function App () {
         <>
             <GlobalStyle />
             <Container>
-                <Header
-                    title        = {'To-Do List'}
-                />
+                <Header />
                 <Form
-                    placeholder  = {'Type a todo, then hit enter!'}
                     onAddTodo    = { onAddTodo }
                 />
                 <TodoList
