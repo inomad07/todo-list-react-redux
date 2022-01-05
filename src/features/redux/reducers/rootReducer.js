@@ -49,6 +49,12 @@ const rootReducer = (state = initialState, action) => {
             return state.filter(todo => todo.id !== payload)
         }
 
+        case types.REMOVE_COMPLETED: {
+            return items.filter(item => {
+                return !item.completed;
+            });
+        }    
+
         default: return state;
     }
 };
