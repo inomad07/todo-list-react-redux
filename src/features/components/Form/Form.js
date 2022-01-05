@@ -1,7 +1,7 @@
-import React, { useState } from "react";
-import PropTypes from "prop-types";
-import styled from "styled-components";
-import toastr from "toastr";
+import React, { useState } from "react"
+import PropTypes from "prop-types"
+import styled from "styled-components"
+import toastr from "toastr"
 import "toastr/build/toastr.min.css";
 
 const Input = styled.input`
@@ -10,9 +10,11 @@ const Input = styled.input`
     border-width: 0;
 `;
 
-const Form = (props) => {
+const placeholder = 'Type a todo, then hit enter!'; 
+
+function Form(props) {
     const [text, setText] = useState("");
-    const { placeholder, onAddTodo } = props;
+    const { onAddTodo } = props;
 
     const handleChange = (e) => {
         setText(e.target.value);
@@ -47,7 +49,6 @@ const Form = (props) => {
 };
 
 Form.propTypes = {
-    placeholder: PropTypes.string,
     onAddTodo: PropTypes.func,
 };
 

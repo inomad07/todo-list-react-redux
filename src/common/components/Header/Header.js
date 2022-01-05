@@ -1,6 +1,5 @@
-import React from "react";
-import PropTypes from 'prop-types';
-import styled from 'styled-components';
+import React from 'react'
+import styled from 'styled-components'
 
 
 const Nav = styled.div`
@@ -13,16 +12,12 @@ const Title = styled.div`
     color: #FFFF;
 `;
 
-const Header = ({ title }) => {
+function Header() {
     return (
         <Nav>
-            <Title>{ title }</Title>
+            <Title>To-Do List</Title>
         </Nav>
     );
-};
-
-Header.propTypes = {
-    title: PropTypes.string
 };
 
 export default Header;
