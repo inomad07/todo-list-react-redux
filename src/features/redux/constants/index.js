@@ -2,6 +2,7 @@
 export default {
     ADD:    "ADD",
     REMOVE: "REMOVE",
+    REMOVE_COMPLETED: "REMOVE_COMPLETED",
     TOGGLE: "TOGGLE",
     UPDATE: "UPDATE"
 };
