@@ -22,7 +22,7 @@ const Container = styled.div`
 `;
 
 
-function App () {
+export default function App () {
     const todoList = useSelector((state: State) => state.rootReducer);
     const dispatch = useDispatch();
 
@@ -50,11 +50,8 @@ function App () {
         <>
             <GlobalStyle />
             <Container>
-                <Header
-                    title        = {'To-Do List'}
-                />
+                <Header />
                 <Form
-                    placeholder  = {'Type a todo, then hit enter!'}
                     onAddTodo    = { onAddTodo }
                 />
                 <TodoList
@@ -68,5 +65,3 @@ function App () {
         </>
     )
 }
-
-export default App;

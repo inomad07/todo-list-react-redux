@@ -7,12 +7,7 @@ export type appProps = {
     todoList: []
 };
 
-export type headerProps = {
-    title: string
-}
-
 export type formProps = {
-    placeholder: string,
     onAddTodo: Function
 }
 
